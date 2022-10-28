@@ -16,6 +16,8 @@ async function buscarCep() {
         resultado.innerHTML = ''
     }
     else {
+        inputCep.value = ''
+
         const resultado = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         const dados = await resultado.json()
 
