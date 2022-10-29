@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Rubik';
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #071126;
+}
+
+#title {
+    color: white;
+}
+
+/* #buttonTheme {
+    margin-right: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+main {
+    width: 100%;
+    height: 7rem;
+    background-color: #136d6e;
+}
+
+main #form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #inputCep {
+    width: 50%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-family: 'Rubik';
+    font-size: larger;
+    font-weight: bold;
+}
+
+main #consulte {
+    margin-top: 10px;
+    border-radius: 2rem;
+    background-color: white;
+    height: 2rem;
+    width: 8rem;
+    font-size: large;
+    background-color: #B3F2EC;
+}

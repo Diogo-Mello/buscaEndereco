@@ -2,18 +2,17 @@
 
 async function buscarCep() {
 
-    let cepResult = inputCep.value;
-    let cep = cepResult.replace(/[^0-9]/g, '')
+    let cep = inputCep.value;
 
     if (verificarNumero(cep) == false) {
-        result.innerHTML = `DIGITE SOMENTE NÚMEROS`
+        indexResult.innerHTML = `DIGITE SOMENTE NÚMEROS`
 
-        resultado.innerHTML = ''
+        indexResultado.innerHTML = ''
     }
     else if (cep.length < 8) {
-        result.innerHTML = `NÃO ENCONTRADO`
+        indexResult.innerHTML = `CEP INVALIDO`
 
-        resultado.innerHTML = ''
+        indexResultado.innerHTML = ''
     }
     else {
         inputCep.value = ''
@@ -22,12 +21,13 @@ async function buscarCep() {
         const dados = await resultado.json()
 
         if (dados.erro) {
-            result.innerHTML = 'CEP NÃO EXISTE';
 
-            resultado.innerHTML = '';
+            indexResultado.innerHTML = '';
+
+            indexResult.innerHTML = 'CEP NÃO EXISTE';
         }
         else {
-            result.innerHTML = `ENCONTRADO`
+            indexResult.innerHTML = `ENCONTRADO`
 
         inserirResultados(dados)
         }
@@ -44,7 +44,7 @@ function verificarNumero(n) {
 // Função que inseri resultados caso a busca de certo
 
 function inserirResultados(dados) {
-    resultado.innerHTML = `
+    indexResultado.innerHTML = `
     <p>Bairro: <span id="bairro"></span></p>
     <p>CEP: <span id="cep"></span></p>
     <p>Complemento: <span id="complemento"></span></p>
