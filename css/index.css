@@ -107,13 +107,14 @@ main #resultado {
 
 main table {
     width: 95%;
+    height: 80%;
     text-align: center;
     border: 3px solid white;
     margin: auto;
     margin-top: 2rem;
 }
 
-main th, main td {
+main table th, main table td {
     border: 1px solid white;
 }
 
