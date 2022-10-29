@@ -2,6 +2,8 @@ const inputCep = document.getElementById('inputCep');
 
 const indexResult = document.getElementById('result');
 
+const btnConsulte = document.getElementById('btnConsulte')
+
 const indexResultado = document.getElementById('resultado')
 
 // inputCep.addEventListener('keypress', () => {
@@ -12,3 +14,8 @@ const indexResultado = document.getElementById('resultado')
 //     }
 // })
 
+document.addEventListener('keypress', function(e){
+    if (e.key === 'Enter') {
+        btnConsulte.click()
+    }
+})

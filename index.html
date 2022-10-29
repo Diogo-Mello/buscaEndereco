@@ -16,32 +16,38 @@
 <body>
     <header>
         <h2 id="title">Busca Endereço</h3>
-        <!-- 🌞🌚 -->
+            <!-- 🌞🌚 -->
     </header>
 
-    <main>
+    <nav>
         <div id="form">
-            <input type="text" inputmode="numeric" name="inputCep" id="inputCep" placeholder="Digite um cep" maxlength="8">
-            <button id="consulte" onclick="buscarCep()">Pesquisar</button>
+            <input type="text" inputmode="numeric" name="inputCep" id="inputCep" placeholder="Digite um cep"
+                maxlength="8">
+            <button id="btnConsulte" onclick="buscarCep()">Pesquisar</button>
+        </div>
+    </nav>
+
+    <aside>
+        <p id="result">AGUARDANDO...</p>
+    </aside>
+
+    <main>
+        <div id="resultado">
+            <!-- <p>Bairro: <span id="bairro"></span></p>
+            <p>CEP: <span id="cep"></span></p>
+            <p>Complemento: <span id="complemento"></span></p>
+            <p>DDD: <span id="ddd"></span></p>
+            <p>GIA: <span id="gia"></span></p>
+            <p>IBGE: <span id="ibge"></span></p>
+            <p>Localidade: <span id="localidade"></span></p>
+            <p>Logradouro: <span id="logradouro"></span></p>
+            <p>Siafi: <span id="siafi"></span></p>
+            <p>UF: <span id="uf"></span></p> -->
+
+            
         </div>
     </main>
 
-    
-
-    <p id="result">AGUARDANDO...</p>
-
-    <div id="resultado">
-        <!-- <p>Bairro: <span id="bairro"></span></p>
-        <p>CEP: <span id="cep"></span></p>
-        <p>Complemento: <span id="complemento"></span></p>
-        <p>DDD: <span id="ddd"></span></p>
-        <p>GIA: <span id="gia"></span></p>
-        <p>IBGE: <span id="ibge"></span></p>
-        <p>Localidade: <span id="localidade"></span></p>
-        <p>Logradouro: <span id="logradouro"></span></p>
-        <p>Siafi: <span id="siafi"></span></p>
-        <p>UF: <span id="uf"></span></p> -->
-    </div>
 </body>
 
 </html>
