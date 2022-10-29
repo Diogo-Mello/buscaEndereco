@@ -56,70 +56,64 @@ function inserirResultados(dados, cep) {
 
                 <tr>
                     <td colspan="3">
-                        <p>Logradouro:</p>
-                        <span>${dados.logradouro}</span>
+                        <p class="tituloInformacao">Logradouro:</p>
+                        <span class="informacao">${dados.logradouro}</span>
                     </td>
                 </tr>
                 
 
                 <tr>
                     <td colspan="3">
-                        <p>Bairro:</p>
-                        <span>${dados.bairro}</span>
+                        <p class="tituloInformacao">Bairro:</p>
+                        <span class="informacao">${dados.bairro}</span>
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="3">
-                        <p>Complemento:</p>
-                        <span>${dados.complemento}</span>
+                        <p class="tituloInformacao">Complemento:</p>
+                        <span class="informacao">${dados.complemento}</span>
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="3">
-                        <p>Cidade:</p>
-                        <span>${dados.localidade}</span>
+                        <p class="tituloInformacao">Cidade:</p>
+                        <span class="informacao">${dados.localidade}</span>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <p>DDD:</p>
-                        <span>${dados.ddd}</span>
+                        <p class="tituloInformacao">DDD:</p>
+                        <span class="informacao">${dados.ddd}</span>
                     </td>
 
                     <td>
-                        <p>UF:</p>
-                        <span>${dados.uf}</span>
+                        <p class="tituloInformacao">UF:</p>
+                        <span class="informacao">${dados.uf}</span>
                     </td>
 
                     <td>
-                        <p>CEP:</p>
-                        <span>${dados.cep}</span>
+                        <p class="tituloInformacao">CEP:</p>
+                        <span class="informacao">${dados.cep}</span>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <p>IBGE:</p>
-                        <span>${dados.ibge}</span>
+                        <p class="tituloInformacao">IBGE:</p>
+                        <span class="informacao">${dados.ibge}</span>
                     </td>
 
                     <td>
-                        <p>GIA:</p>
-                        <span>${dados.gia}</span>
+                        <p class="tituloInformacao">GIA:</p>
+                        <span class="informacao">${dados.gia}</span>
                     </td>
 
                     <td>
-                        <p>SIAFI:</p>
-                        <span>${dados.siafi}</span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117168.74493186254!2d-47.70936226379985!3d-23.40545724992264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5e6bcb072354f%3A0x420530adb99e9506!2sIper%C3%B3%20-%20SP%2C%20${cep}!5e0!3m2!1spt-BR!2sbr!4v1667067120276!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="tituloInformacao">SIAFI:</p>
+                        <span class="informacao">${dados.siafi}</span>
                     </td>
                 </tr>
             </table>

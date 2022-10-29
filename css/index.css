@@ -122,6 +122,15 @@ main table th, main table td {
     padding: 2px;
 }
 
+main table .tituloInformacao {
+    font-size: medium;
+    color: rgb(216, 216, 216);
+}
+
+main table .informacao {
+    font-size: x-large;
+}
+
 footer {
     grid-area: footer;
     background-color: var(--cor-quinaria);
