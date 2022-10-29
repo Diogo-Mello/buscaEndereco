@@ -23,9 +23,10 @@ body {
     'header'
     'nav'
     'aside'
-    'main';
+    'main'
+    'footer';
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 7rem 2rem 1fr;
+    grid-template-rows: 3rem 7rem 2rem 1fr 5rem;
 }
 
 header {
@@ -103,25 +104,32 @@ main {
 main #resultado {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 main table {
     width: 95%;
-    height: 80%;
+    height: 90%;
     text-align: center;
     border: 3px solid white;
-    margin: auto;
     margin-top: 2rem;
 }
 
 main table th, main table td {
     border: 1px solid white;
+    padding: 2px;
 }
 
-
-
-
-
+footer {
+    grid-area: footer;
+    background-color: var(--cor-quinaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+}
 
 .loader {
     margin-top: 1rem;
