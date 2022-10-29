@@ -113,7 +113,8 @@ main table {
     height: 85%;
     text-align: center;
     border: 3px solid white;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 main table th, main table td {
