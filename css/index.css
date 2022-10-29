@@ -110,7 +110,7 @@ main #resultado {
 
 main table {
     width: 95%;
-    height: 90%;
+    height: 85%;
     text-align: center;
     border: 3px solid white;
     margin-top: 2rem;
@@ -128,7 +128,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: x-large;
+    font-size: large;
 }
 
 .loader {
